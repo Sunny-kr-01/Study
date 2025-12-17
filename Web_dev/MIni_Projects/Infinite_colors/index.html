@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite BGColors</title>
+    <style>
+        body{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Click to start</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    
+
+    <script>
+        const start=document.querySelector("#start")
+        const stop=document.querySelector("#stop")
+        var x=null
+    start.addEventListener("click",function(){
+        x=setInterval(()=>{
+            let x=Math.ceil(Math.random()*256)
+            let y=Math.ceil(Math.random()*256)
+            let z=Math.ceil(Math.random()*256)
+            document.body.style.backgroundColor=`rgb(${x},${y},${z})`
+        },200)
+    })
+    stop.addEventListener("click",()=>{
+            clearInterval(x)
+            console.log("Stopped")
+        })     
+    </script>
+</body>
+</html>

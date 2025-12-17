@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #414141;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML EVENTS</h1>
+    <ul id="images">
+        <li><img id="doncare" width="100px" src="https://imgs.search.brave.com/K9LT-xhGtE1okvZuOnpK5487M4E7Xzjtv56XyZoKlcc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/d2hhdC1qamstcGlj/dHVyZS1kby15b3Ut/cmVsYXRlLXRvLXRo/ZS1tb3N0LWlsbC1n/by1maXJzdC12MC15/bzZtaW0yNmt6OGMx/LmpwZWc_d2lkdGg9/MTA4MCZmb3JtYXQ9/cGpwZyZhdXRvPXdl/YnAmcz1mYzE2OGQx/YzMxMTFhNjJiNmM4/NDg3YjE1N2Y4MDM0/NzYzN2U2YzI0" alt=""></li>
+        
+        <li><img id="ah" width="100px" src="https://imgs.search.brave.com/7YOkpWAytXYhCaP0jLN77AQv951Z2EPrfgZf0tHGEfY/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zMy56/ZXJvY2hhbi5uZXQv/MjQwLzExLzMwLzQx/MzE1MTEuanBn" alt=""></li>
+        
+        <li><img id="ahh" width="200px" src="https://preview.redd.it/dao9x9h3m7t91.jpg?width=1080&crop=smart&auto=webp&s=7c07e072db28eb96b0987e664372187ed28d5881" alt=""></li>
+    
+        <li><img id="no" width="120px" src="https://imgs.search.brave.com/T9w50D9wxYGtRLF-nNJmZnLOjOncx3oEgnX-3a-N7s0/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/d2hhdC1hcmUtc29t/ZS1vZi15b3VyLWZh/dm9yaXRlLWpqay1y/ZWFjdGlvbi1pbWFn/ZXMtdjAtN2k2aDRi/N2ZxdnNjMS5wbmc_/d2lkdGg9MTE3MCZh/dXRvPXdlYnAmcz0x/NGI1ZDc2OTAzY2Ex/OTU5MjVhNDM2YjE3/ZWQyY2VjOGIwZTEz/ODU4" alt=""></li>
+        
+        <li><img id="ahhh" width="100px" src="https://imgs.search.brave.com/cDsWgSRkBhTctlsfjo28bRuJOMZlltIrOCkkUYKvErI/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzMxL2Zl/LzgyLzMxZmU4Mjg1/ZTA2NGNlNTBjYjRj/Mjc2Mzk3ZTQzM2Nm/LmpwZw" alt=""></li>
+
+        <li><img id="dead" width="150px" src="https://imgs.search.brave.com/DvUJyOMlk-xhkUass5uuTnxDPoLlD2Tw2q3fdB3ifE8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/d2hhdC1qamstcGlj/dHVyZS1kby15b3Ut/cmVsYXRlLXRvLXRo/ZS1tb3N0LWlsbC1n/by1maXJzdC12MC0y/NWVvbDAzajV6OGMx/LnBuZz93aWR0aD0x/MDgwJmZvcm1hdD1w/bmcmYXV0bz13ZWJw/JnM9NzZjMWU4NWI5/MDMzYjczMThmMDNk/YWYzM2JkZTBiZGNk/OWY0MzEzMQ" alt=""></li>
+        <li><a style="color: aliceblue;" href="https://www.sakuhentai.net/mei-mei-hentai-animation-jujutsu-kaisen-momotdart/" id="google">Google</a></li>
+        
+    </ul>
+</body>
+<script>
+    //addeventlistner("event",functin(e->event object){},       false->default) false-> event bubbling
+    // if true -> event capturing
+    // e -> type,timestamp,defaultPrevevented
+    // target, toElement
+    /*  srcElement, currentTarget   */
+    //clientX,clientY,screenX,screenY
+    //altkey, ctrlkey, shiftkey
+    document.getElementById('images').addEventListener("click",(e)=>{
+        console.log("Clicked Inside UL")
+    },false)
+    document.getElementById('doncare').addEventListener("click",(e)=>{
+        console.log("Don't care")
+        e.stopPropagation()
+    },false)
+    document.getElementById("google").addEventListener("click",(e)=>{
+        //e.preventDefault();
+        console.log("Shabbaash!!...")
+        e.stopPropagation()
+    })
+
+    document.querySelector("#images").addEventListener("click",(e)=>{
+        console.log(e.target.parentNode);
+        if(e.target.tagName=='IMG'){
+            let to_remove=e.target.parentNode;
+            //to_remove.remove()
+            to_remove.parentNode.removeChild(to_remove)
+        }
+        
+    },false)
+
+</script>
+</html>

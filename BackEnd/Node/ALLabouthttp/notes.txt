@@ -1,0 +1,12 @@
+Server takes requests and sends response 
+these requests and responses contain many information along with them..
+
+Request 
+method then url then HTTP/1.1 -> method:GET url:/about HTTP/1.1
+Headers 
+Body (optional)
+
+Rsponse 
+HTTP/1.1 then status code then status text -> HTTP/1.1 200 OK        staus code like 404
+Headers
+Body (Optional)

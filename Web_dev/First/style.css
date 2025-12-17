@@ -1,0 +1,166 @@
+*{
+    margin:0%;
+    padding: 0%;
+    font-family:Calibri;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#nav{
+    width: 100%;
+    height: 10%;
+    position: fixed;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: white;
+}
+#dublicate_head{
+    width: 100%;
+    height: 10%;
+}
+#page1,#page2{
+    width: 100%;
+    height: 90%;
+}
+.nav_left:hover{
+    color: blue;
+}
+.nav_left{
+    margin: 1%;
+    padding: 1%;
+    color: rgb(23, 23, 103);
+}
+#contact:hover{
+    color: blue;
+}
+#contact{
+    text-align: center;
+    margin-left: 5%;
+    font-weight: lighter;
+    color: rgb(34, 34, 120);
+}
+.icon:hover{
+    background-color: whitesmoke;
+}
+.icon{
+    border-radius: 50%;
+    padding: 1%;
+}
+#login:hover{
+    background-color: whitesmoke;
+    border-radius: 25%;
+}
+#login{
+    display: flex;
+    padding: 1%;
+}
+#try:hover{
+    background-color: rgb(53, 141, 53);
+}
+#try{
+    width: 8%;
+    height: 50%;
+    background-color: green;
+    border-radius: 6%;
+    margin-left: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+}
+#logo{
+    height: 70%;
+    margin-left: 2%;
+}
+#logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#notice{
+    width: 100%;
+    height: 7%;background-color: blue;
+}
+#page_end{
+    width: 100%;
+    height: 18%;
+}
+#content{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+
+}
+#main_left{
+    width: 50%;
+}
+#main_left h1{
+    margin-top: 9%;
+    margin-left: 8%;
+    margin-right: 8%;
+    font-size: xxx-large;
+}
+#main img{
+    z-index: -1;
+    position: fixed;
+    width: 5px;
+}
+#notice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    color: white;
+}
+#lorem{
+    font-size: x-large;
+    margin-top: 3%;
+    margin-left: 8%;
+    margin-right: 5%;
+}
+#main_right{
+    margin-top: 7%;
+    margin-left: 5%;
+    width: 50%;
+}
+#main_right video{
+    width: 90%;
+    border-radius: 5px;
+}
+#trial{
+    margin-top: 8%;
+    margin-left: 8%;
+    width: 80%;
+    height: 15%;
+    display: flex;
+}
+#start{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    width: 35%;
+    height: 75%;
+    margin-top: 1%;
+    margin-right: 10%;
+    background-color: rgb(87, 87, 209);
+    border-radius: 3%;
+}
+#watch{
+    color: rgb(87, 87, 209);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    height: 71%;
+    margin-top: 1%;
+    margin-right: 10%;
+    border-width: 3px;
+    border-style: solid;
+    border-color:rgb(87, 87, 209); 
+    border-radius: 3%;
+}

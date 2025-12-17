@@ -1,0 +1,32 @@
+/* CSS boiler plate */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    height: 100%;
+    width: 100%; /* CSS boiler plate.. till here */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* these two cannot wrk without display:flex */
+}
+
+
+
+div{
+    height: 30%;
+    width: 30%;
+    font-size: large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#box1{
+    background-color: aqua;
+}
+#box2{
+    background-color: aquamarine;
+}

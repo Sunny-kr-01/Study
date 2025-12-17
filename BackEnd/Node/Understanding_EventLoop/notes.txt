@@ -1,0 +1,5 @@
+Let node js to perform non-blocking i/o..
+means -> since js is single threaded.. which makes it inefficient for multitasking...
+but by using evevt loops it offloads the word to the kernel(OS) meaning gives the work which time consuming to the OS 
+which is efficient for multitasking.. and while waiting for the response does other works.. after the complition the callback works
+  

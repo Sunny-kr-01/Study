@@ -1,0 +1,21 @@
+let x=document.getElementById("box1");
+x.addEventListener("mouseenter",
+    function(){
+        a=Math.floor(Math.random()*255);
+        b=Math.floor(Math.random()*255);
+        c=Math.floor(Math.random()*255);
+        x.style.backgroundColor=`rgb(${a},${b},${c})`
+        x.style.height="250px";
+        x.style.width="250px";
+        ele=Math.floor(Math.random()*10);
+        x.innerHTML=`<h1>${ele}<h1/>`
+    }
+)
+x.addEventListener("mouseleave",
+    function(){
+        x.style.backgroundColor="white"
+        x.style.height="150px";
+        x.style.width="150px";
+        x.innerHTML="<h1>1<h1/>"
+    }
+)

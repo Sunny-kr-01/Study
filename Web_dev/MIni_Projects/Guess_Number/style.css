@@ -1,0 +1,24 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+html,body{
+width: 100%;
+height: 100%;
+color: #fff;
+background-color: #212121;
+}
+h1{
+    text-align: center;
+}
+#instruction{
+    text-align: center;    
+}
+.form{
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+}
+#resultpara{
+    text-align: center;
+}
