@@ -48,10 +48,11 @@ for(int i=0;i<3;i++){
 
 if((ttt[0][0]==ttt[1][1] && ttt[1][1]==ttt[2][2] && ttt[2][2]=='X')||(ttt[0][2]==ttt[1][1] && ttt[1][1]==ttt[2][0] && ttt[2][0]=='X')){
     printf("Player 1 wins !! ");
-    break;}
+    return 0;}
  else if((ttt[0][0]==ttt[1][1] && ttt[1][1]==ttt[2][2] && ttt[2][2]=='0')||(ttt[0][2]==ttt[1][1] && ttt[1][1]==ttt[2][0] && ttt[2][0]=='0')){
     printf("Player 2 wins !!");
- break;}
+    return 0;
+}
 
 
 

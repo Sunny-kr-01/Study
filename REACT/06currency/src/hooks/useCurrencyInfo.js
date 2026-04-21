@@ -13,10 +13,10 @@ export default function useCurrencyInfo(base = 'USD') {
       setError(null)
       try {
         const baseUp = (base || 'USD').toUpperCase()
-        const res = await fetch(`https://api.exchangerate.host/latest?base=${baseUp}`)
+        const res = await fetch(`https://api.frankfurter.app/latest?from=${baseUp}`)
         if (!res.ok) throw new Error(`HTTP ${res.status}`)
         const data = await res.json()
-        if (!cancelled) setRates(data.rates || {})
+        if (!cancelled) setRates(data.rates ?? {})
       } catch (err) {
         if (!cancelled) setError(err.message || 'Fetch error')
       } finally {
